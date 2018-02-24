@@ -1,0 +1,21 @@
+#include"variable.h"
+#include"signature.h"
+#include<stdio.h>
+void insertion(int arr[],int n)
+{
+	for(i=1;i<n;i++)
+	{
+		j=i;
+		element=arr[i];
+		while(j>0&&arr[j-1]>element)
+		{
+			arr[j]=arr[j-1];
+			j--;
+		}
+		arr[j]=element;
+	}
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",arr[i]);
+	}
+}

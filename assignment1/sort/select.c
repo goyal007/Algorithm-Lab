@@ -1,0 +1,23 @@
+#include"variable.h"
+#include"signature.h"
+#include<stdio.h>
+void selection(int arr[],int n)
+{
+		lowindex=0;
+		for(i=0;i<n;i++)
+		{
+			lowindex=i;
+			for(j=i;j<n;j++)
+			{
+				if(arr[lowindex]>arr[j])
+				lowindex=j;
+			}
+			t=arr[lowindex];
+			arr[lowindex]=arr[i];
+			arr[i]=t;
+		}
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",arr[i]);
+	}
+}
