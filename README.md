@@ -1,1 +1,2 @@
-# Algorithm-Lab
+# DAA-Lab
+Algorithm-Lab
